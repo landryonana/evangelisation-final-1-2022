@@ -36,8 +36,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 def generate_pdf(request, orientation, annee=None):
     context = dict()
     all_evang = None
-    image_src = os.path.join(BASE_DIR, 'static//images_root')
-    context['image_src'] = image_src
 
     if annee:
         all_evang = get_personne_evang_all_by__year(annee)
