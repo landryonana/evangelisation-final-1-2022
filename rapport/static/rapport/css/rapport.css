@@ -1,0 +1,207 @@
+
+.wrapper-stat-evang{
+    width: 100%;
+    padding: 0 15px;
+}
+
+.wrapper-stat-evang-site{
+    margin-top: 35px;
+    width: 100%;
+}
+
+.wrapper-stat-evang-site h2{
+    font-size: 25px;
+}
+
+.rapport_site table thead{
+    background-color: #006c69;
+    color: #fff;
+}
+
+.wrapper-stat-evang-evangstatistq table thead{
+    background-color: #006c69;
+    color: #fff;
+    text-align: center;
+    font-size: 13px;
+}
+
+.rapport-diagram{
+    width: 100%;
+    overflow: auto;
+    margin-top: 45px;
+}
+
+.rapport-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 25px;
+    background: #d4ad14;
+    margin-bottom: 25px;
+}
+
+.rapport-form select{
+}
+
+.fallbackDatePicker{
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-top: 15px;
+    width: 100%;
+}
+
+.error-rapport{
+    text-align: center;
+    width: 100%;
+    font-size: 35px;
+    display: block;
+    margin-top: 65px;
+    padding: 35px;
+}
+
+#day, #year, #month{
+    padding: 7px;
+    margin: 0px 5px;
+}
+
+.fallbackDatePicker span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.wrapper-printPdf{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrapper-printPdf .h2-v{
+    display: block;
+    color: #006c69;
+    width: 100%;
+    text-align: center;
+    /* color: #fff; */
+    padding: 7px 0px;
+    margin-bottom: 16px !important;
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.wrapper-printPdf .h2-assembl{
+    color: #006c69;
+    display: block;
+    width: 100%;
+    padding: 15px 0px;
+    margin: -16px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.wrapper-printPdf .h2-label-stat{
+    display: block;
+    text-align: center;
+    width: 100%;
+    color: #006c69;
+    margin: -16px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.dell{
+    display: none !important;
+}
+
+
+.wrapper-search-result{
+    display: flex;
+}
+
+.wrapper-search-result p{
+    text-transform: uppercase;
+    font-size: 25px;
+    color: red;
+    text-align: center;
+    margin-left: 5px;
+}
+
+
+.rapport-form h2{
+    text-decoration: underline; 
+    font-weight: bold;
+}
+
+.scroll-tab-rappport{
+    zoom: .5;
+}
+
+.option-rapport-table{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 15px 0px;
+    width: 100%;
+}
+
+.wrapper-print{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 15px;
+}
+
+.modal-content h5{
+    font-size: 17px;
+    color: #d0c433;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+
+.modal-content ul{
+    line-height: 35px;
+}
+
+.modal-content li{
+    
+}
+
+.modal-content .evang_count{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.modal-content .bder-modal-evang{
+    border-left: 2px solid #006c69;
+    margin-bottom: 15px;
+}
+
+.zoom-flottant{
+    position: fixed !important;
+    top: 65px;
+    right: 25px;
+    z-index: 250;
+    background-color: aliceblue;
+    padding: 7px;
+    border-radius: 7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

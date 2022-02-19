@@ -1,0 +1,231 @@
+<div class="side-liste">
+    {% if backup %}
+        <div class="item {% if backup_opera == 'exportation' %}actived{% endif %}">
+            <a href="{% url 'backup:backup_export_app' %}">
+                <i class="fas fa-user"></i>
+                Exportation
+            </a>
+        </div>
+        <div class="item {% if backup_opera == 'importation' %}actived{% endif %}">
+            <a href="{% url 'backup:backup_import_app' %}">
+                <i class="fas fa-user"></i>
+                Importation
+            </a>
+        </div>
+    {% else %}
+        <div class="item {% if type_opera == 'évangelisations' %}actived{% endif %}">
+            <a href="{% url 'evangelisation:evangelisation_app_operations' 'évangelisations' %}">
+                <i class="fas fa-user"></i>
+                Évangelisations
+            </a>
+        </div>
+        <div class="item {% if type_opera == 'sites' %}actived{% endif %}">
+            <a href="{% url 'evangelisation:evangelisation_app_operations' 'sites' %}">
+                <i class="fas fa-users"></i>
+                Sites
+            </a>
+        </div>
+        <div class="item {% if type_opera == 'participants' %}actived{% endif %}">
+            <a href="{% url 'evangelisation:evangelisation_app_operations' 'participants' %}">
+                <i class="fas fa-sign-out-alt"></i>
+                Participants
+            </a>
+        </div>
+        <div class="item {% if type_opera == 'personnes' %}actived{% endif %}">
+            <a href="{% url 'evangelisation:evangelisation_app_operations' 'personnes' %}">
+                <i class="fas fa-users"></i>
+                Personnes
+            </a>
+        </div>
+    {% endif %}
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

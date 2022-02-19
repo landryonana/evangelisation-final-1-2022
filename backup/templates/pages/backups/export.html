@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+
+
+{% block titre %}
+ASSEMBLE EAUX PAISIBLES | Evangélisations
+{% endblock titre %}
+
+
+
+{% block hamburger %}
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-times"></i>
+    </div>
+{% endblock hamburger %}
+
+
+
+{% block sidebar %}
+    {% include 'layouts/_sidebar.html' %}
+{% endblock sidebar %}
+
+
+
+{% block content %}
+<div class="home">
+    <div class="wrapper-head-liste">
+        <div class="head-liste">
+            <h2>Exportation des données</h2>
+            <h4>Sauvegarder les données de la base de données</h4>
+        </div>
+    </div>
+    <div class="wrapper-backup">
+        <div class="row">
+            <div class="col-md-2">
+                {% include 'partials/operation-side-bar-link.html' %}
+            </div>
+            <div class="col-md-10">
+            {% if messages %}
+                {% include 'partials/messages_request.html' %}
+            {% endif %}
+                
+            <div class="liste">
+                <form id="form-suppresion-liste"
+                    enctype="multipart/form-data" 
+                    action="{% url  %}"
+                    method="post" 
+                    class="form-group marg-top">
+                    {% csrf_token %}
+                    <p>Veuillez selectionner le format du fichier.</p>
+                    <select name="file-format" class="form-control my-3">
+                        <option selected>choisir le format...</option>
+                        <option>JSON</option>
+                    </select>
+                    <button class="btn btn-success btn-sm" type="submit">Exporter</button>
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>
+
+</div>
+{% endblock content %}

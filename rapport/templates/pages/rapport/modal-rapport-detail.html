@@ -1,0 +1,37 @@
+<div class="modal-header">
+    <h2 class="modal-title text-center" id="exampleModalLabel">Détail de {{mois}} {{annee}}</h2>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+
+<div class="modal-body">
+    <div class="wrapper-stat-evang">
+        <div class="wrapper-stat-evang-evangstatistq">
+            <div class="row">
+                {% for evg in modal_evang %}
+                    <div class="col-lg-4 col-sm-12 bder-modal-evang">
+                        <h4>Jour : {{ evg.evang.day }}</h4>
+                        <h5>Site : {{ evg.evang.site }}</h5>
+                        <div class="evang_count">
+                            <ul>
+                                <li>Nombre de oui : {{ evg.nbre_oui }}</li>
+                                <li>Nombre de déjà : {{ evg.nbre_dja }}</li>
+                                <li>Nombre de non : {{ evg.nbre_non }}</li>
+                                <li>Nombre d'indéci : {{ evg.nbre_ras }}</li>
+                            </ul>
+                        </div>
+                        <h5 style="color: #dc3545;">Total : {{ evg.total }}</h5>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>    
+</div>
+
+<div class="modal-footer">
+    <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">Fermer</button>      
+</div>
+
+
+
