@@ -6,8 +6,6 @@ import datetime
 from datetime import date
 from io import BytesIO
 from django.template.loader import get_template, render_to_string
-import xhtml2pdf.pisa as pisa
-import uuid
 from django.conf import settings
 from django.shortcuts import render, redirect
 import random
@@ -16,7 +14,6 @@ from django.conf import settings
 from django.http import HttpResponse
 from django.template.loader import get_template
 from xhtml2pdf import pisa
-from django.contrib.staticfiles import finders
 
 
 from evangelisation.utils import (get_stat_evang_person_infos, month_name, month_evang, month_numer,
